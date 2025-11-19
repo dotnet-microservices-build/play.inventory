@@ -1,3 +1,3 @@
 # Play.Inventory
 
-Play Economy Inventorymicroservice
+Play Economy Inventory microservice
