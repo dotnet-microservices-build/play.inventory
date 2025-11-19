@@ -1,0 +1,151 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/odladitan/Desktop/coding_tutorials/dotnet/microservices_with_dotnet/identity/services/Play.Inventory/src/Play.Inventory.Service/Play.Inventory.Service.csproj": {}
+  },
+  "projects": {
+    "/Users/odladitan/Desktop/coding_tutorials/dotnet/microservices_with_dotnet/identity/services/Play.Inventory/src/Play.Inventory.Contracts/Play.Inventory.Contracts.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/odladitan/Desktop/coding_tutorials/dotnet/microservices_with_dotnet/identity/services/Play.Inventory/src/Play.Inventory.Contracts/Play.Inventory.Contracts.csproj",
+        "projectName": "Play.Inventory.Contracts",
+        "projectPath": "/Users/odladitan/Desktop/coding_tutorials/dotnet/microservices_with_dotnet/identity/services/Play.Inventory/src/Play.Inventory.Contracts/Play.Inventory.Contracts.csproj",
+        "packagesPath": "/Users/odladitan/.nuget/packages/",
+        "outputPath": "/Users/odladitan/Desktop/coding_tutorials/dotnet/microservices_with_dotnet/identity/services/Play.Inventory/src/Play.Inventory.Contracts/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/odladitan/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "/Users/odladitan/Desktop/coding_tutorials/dotnet/microservices_with_dotnet/projects/packages": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.411/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/odladitan/Desktop/coding_tutorials/dotnet/microservices_with_dotnet/identity/services/Play.Inventory/src/Play.Inventory.Service/Play.Inventory.Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/odladitan/Desktop/coding_tutorials/dotnet/microservices_with_dotnet/identity/services/Play.Inventory/src/Play.Inventory.Service/Play.Inventory.Service.csproj",
+        "projectName": "Play.Inventory.Service",
+        "projectPath": "/Users/odladitan/Desktop/coding_tutorials/dotnet/microservices_with_dotnet/identity/services/Play.Inventory/src/Play.Inventory.Service/Play.Inventory.Service.csproj",
+        "packagesPath": "/Users/odladitan/.nuget/packages/",
+        "outputPath": "/Users/odladitan/Desktop/coding_tutorials/dotnet/microservices_with_dotnet/identity/services/Play.Inventory/src/Play.Inventory.Service/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/odladitan/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "/Users/odladitan/Desktop/coding_tutorials/dotnet/microservices_with_dotnet/projects/packages": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/odladitan/Desktop/coding_tutorials/dotnet/microservices_with_dotnet/identity/services/Play.Inventory/src/Play.Inventory.Contracts/Play.Inventory.Contracts.csproj": {
+                "projectPath": "/Users/odladitan/Desktop/coding_tutorials/dotnet/microservices_with_dotnet/identity/services/Play.Inventory/src/Play.Inventory.Contracts/Play.Inventory.Contracts.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.Extensions.Http.Polly": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Play.Catalog.Contracts": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "Play.Common": {
+              "target": "Package",
+              "version": "[1.0.4, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.411/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

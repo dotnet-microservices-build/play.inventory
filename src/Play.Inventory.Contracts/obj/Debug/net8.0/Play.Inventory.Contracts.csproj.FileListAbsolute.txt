@@ -1,0 +1,11 @@
+/Users/odladitan/Desktop/coding_tutorials/dotnet/microservices_with_dotnet/identity/services/Play.Inventory/src/Play.Inventory.Contracts/bin/Debug/net8.0/Play.Inventory.Contracts.deps.json
+/Users/odladitan/Desktop/coding_tutorials/dotnet/microservices_with_dotnet/identity/services/Play.Inventory/src/Play.Inventory.Contracts/bin/Debug/net8.0/Play.Inventory.Contracts.dll
+/Users/odladitan/Desktop/coding_tutorials/dotnet/microservices_with_dotnet/identity/services/Play.Inventory/src/Play.Inventory.Contracts/bin/Debug/net8.0/Play.Inventory.Contracts.pdb
+/Users/odladitan/Desktop/coding_tutorials/dotnet/microservices_with_dotnet/identity/services/Play.Inventory/src/Play.Inventory.Contracts/obj/Debug/net8.0/Play.Inventory.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+/Users/odladitan/Desktop/coding_tutorials/dotnet/microservices_with_dotnet/identity/services/Play.Inventory/src/Play.Inventory.Contracts/obj/Debug/net8.0/Play.Inventory.Contracts.AssemblyInfoInputs.cache
+/Users/odladitan/Desktop/coding_tutorials/dotnet/microservices_with_dotnet/identity/services/Play.Inventory/src/Play.Inventory.Contracts/obj/Debug/net8.0/Play.Inventory.Contracts.AssemblyInfo.cs
+/Users/odladitan/Desktop/coding_tutorials/dotnet/microservices_with_dotnet/identity/services/Play.Inventory/src/Play.Inventory.Contracts/obj/Debug/net8.0/Play.Inventory.Contracts.csproj.CoreCompileInputs.cache
+/Users/odladitan/Desktop/coding_tutorials/dotnet/microservices_with_dotnet/identity/services/Play.Inventory/src/Play.Inventory.Contracts/obj/Debug/net8.0/Play.Inventory.Contracts.dll
+/Users/odladitan/Desktop/coding_tutorials/dotnet/microservices_with_dotnet/identity/services/Play.Inventory/src/Play.Inventory.Contracts/obj/Debug/net8.0/refint/Play.Inventory.Contracts.dll
+/Users/odladitan/Desktop/coding_tutorials/dotnet/microservices_with_dotnet/identity/services/Play.Inventory/src/Play.Inventory.Contracts/obj/Debug/net8.0/Play.Inventory.Contracts.pdb
+/Users/odladitan/Desktop/coding_tutorials/dotnet/microservices_with_dotnet/identity/services/Play.Inventory/src/Play.Inventory.Contracts/obj/Debug/net8.0/ref/Play.Inventory.Contracts.dll
