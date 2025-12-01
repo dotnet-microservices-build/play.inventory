@@ -1,4 +1,6 @@
-﻿namespace Play.Inventory.Contracts
+﻿using System;
+
+namespace Play.Inventory.Contracts
 {
     //Correlation Id is what the state machine uses to correlate the different messages that belong to 
     //one specific instance of the state machine.
