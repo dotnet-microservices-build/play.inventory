@@ -1,9 +1,10 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
+ <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
+    <PackageDescription>Play.Inventory Contracts for Play Economy Services.</PackageDescription>
+    <Authors>David Laditan</Authors>
+    <Company>dotnet projects</Company>
   </PropertyGroup>
 
 </Project>
