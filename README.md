@@ -29,6 +29,17 @@ docker run -it --rm -p 5004:5004 --name inventory -e MongoDbSettings__Host=mongo
 
 ```
 
+### with azure service bus
+
+```powershell
+$adminPass="[PASSWORD HERE]"
+$cosmosDbConnString="[CONNECTION STRING HERE]"
+$serviceBusConnString="[CONNECTION STRING HERE]"
+
+docker run -it --rm -p 5004:5004 --name inventory -e MongoDbSettings__ConnectionString=$cosmosDbConnString -e ServiceBusSettings__ConnectionString=$serviceBusConnString -e ServiceSettings__MessageBroker="servicebus" play.inventory:$version
+
+```
+
 -it: creates an interactive shell so you won't be able to return to the command line terminal until you cancel the execution of the docker run command (until the docker container is stopped running)
 
 --rm: destroys the docker container that was created as soon as the docker run execution is canceled. i.e destroys the container as soon as it is stopped running, just to keep things clean in your local machine
