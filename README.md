@@ -22,6 +22,16 @@ docker build --secret id=GH_OWNER --secret id=GH_PAT -t play.inventory:$version 
 
 ```
 
+```powershell
+$env:GH_OWNER="dotnet-microservices-build"
+$env:GH_PAT="[PAT here]"
+
+$loginserver="playeconomylumsacr.azurecr.io"
+
+docker build --secret id=GH_OWNER --secret id=GH_PAT -t "$loginserver/play.inventory:$version" .
+
+```
+
 ## Run the docker image
 
 ```powershell
@@ -51,3 +61,20 @@ docker run -it --rm -p 5004:5004 --name inventory -e MongoDbSettings__Connection
 -e: enviroment variables to override the configs in out appsettings.json file for the microservice. In this case we override the localhost values with the container names of rabbitmq and mongo which we define in play.infra
 
 -network: is used to specify he newtork used by the other docker containers we want to connect to. In this case the rabbitmq and mongodb containers. We can use the command to get the networks of other containers `docker network ls`
+
+## Publishing the Docker image
+
+```powershell
+$appname="playeconomy"
+$acrName="$($appname)lumsacr"
+$loginserver="playeconomylumsacr.azurecr.io"
+
+#acr login
+az acr login --name $acrName
+
+#re-tag the image
+docker tag play.inventory:$version "$loginserver/play.inventory:$version"
+
+#push the image
+docker push "$loginserver/play.inventory:$version"
+```
