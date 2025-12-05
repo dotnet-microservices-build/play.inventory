@@ -3,7 +3,7 @@
 Play Economy Inventory microservice
 
 ```powershell
-$version="1.0.2"
+$version="1.0.3"
 $owner="dotnet-microservices-build"
 $gh_pat="[PAT here]"
 
