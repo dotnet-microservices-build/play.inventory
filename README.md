@@ -62,7 +62,7 @@ docker run -it --rm -p 5004:5004 --name inventory -e MongoDbSettings__Connection
 
 -network: is used to specify he newtork used by the other docker containers we want to connect to. In this case the rabbitmq and mongodb containers. We can use the command to get the networks of other containers `docker network ls`
 
-## Publishing the Docker image
+## Publishing the Docker image to Azure container Registry
 
 ```powershell
 $appname="playeconomy"
@@ -77,4 +77,23 @@ docker tag play.inventory:$version "$loginserver/play.inventory:$version"
 
 #push the image
 docker push "$loginserver/play.inventory:$version"
+```
+
+### Creating the Azure Managed Identity and granting it access to Key Vault Secrets
+
+```powershell
+$namespace="inventory"
+$kvName="$($appname)lumskv"
+
+az identity create --resource-group $appname --name $namespace
+$IDENTITY_CLIENT_ID=az identity show -g $appname -n $namespace --query clientId -o tsv
+
+# for RBAC
+az role assignment create --role "Key Vault Secrets Officer" --assignee <object-id-or-user-principal-name> --scope <key-vault-resource-id>
+
+
+# if currently RBAC but we need to update to access policy
+az keyvault update --name $kvName --resource-group $appname --enable-rbac-authorization false
+
+az keyvault set-policy -n $kvName --secret-permissions get list --spn $IDENTITY_CLIENT_ID
 ```
